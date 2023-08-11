@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import  {Link} from "react-router-dom";
 
 export class NavBar extends Component {
   render() {
@@ -50,35 +51,60 @@ export class NavBar extends Component {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                 <a href="/" alt=""> <span className="text-white">NewsIndia+</span></a>
+                 <Link  to="/" alt=""> <span className="text-white">NewsIndia+</span></Link> 
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    <a
-                      href="x"
+                    <Link 
+                      to="x"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                       aria-current="page"
                     >
                       Home
-                    </a>
-                    <a
-                      href="x"
+                    </Link> 
+                   
+                    <Link
+                      to="business"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                     >
-                      About
-                    </a>
-                    <a
-                      href="x"
+                      Business
+                    </Link>
+                    <Link 
+                      to="entertainment"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                     >
-                      Projects
-                    </a>
-                    <a
-                      href="x"
+                      Entertainment
+                    </Link> 
+                    <Link 
+                      to="general"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                     >
-                      Calendar
-                    </a>
+                      General
+                    </Link> 
+                    <Link 
+                      to="health"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >
+                      Health
+                    </Link> 
+                    <Link 
+                      to="science"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >
+                      Science
+                    </Link> 
+                    <Link 
+                      to="sports"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >
+                      Sports
+                    </Link> 
+                    <Link 
+                      to="technology"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >
+                      Technology
+                    </Link> 
                   </div>
                 </div>
               </div>
@@ -130,31 +156,31 @@ export class NavBar extends Component {
 
           <div className="sm:hidden" id="mobile-menu">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              <a
-                href="x"
+              <Link 
+                to="x"
                 className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
                 aria-current="page"
               >
                 Dashboard
-              </a>
-              <a
-                href="x"
+              </Link> 
+              <Link 
+                to="x"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Team
-              </a>
-              <a
-                href="x"
+              </Link> 
+              <Link 
+                to="x"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Projects
-              </a>
-              <a
-                href="x"
+              </Link> 
+              <Link 
+                to="x"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Calendar
-              </a>
+              </Link> 
             </div>
           </div>
         </nav>
